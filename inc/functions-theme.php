@@ -31,7 +31,7 @@ function custom_loginlogo_url($url)
 add_filter('login_headerurl', 'custom_loginlogo_url');
 
 //自定义登录页面的LOGO提示为网站名称
-add_filter('login_headertitle', create_function(false, "return get_bloginfo('name');"));
+// add_filter('login_headertitle', create_function(false, "return get_bloginfo('name');"));
 
 //在登录框添加额外的信息
 function custom_login_message()
