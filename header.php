@@ -23,11 +23,11 @@
 				global $current_user;
 			?>	
 				<div class="wel">
-					<?php if (vip_type() == 0) { ?>
+					<!-- <?php if (vip_type() == 0) { ?>
 						<div class="wel-item"><a href="<?php echo home_url('/user?action=vip') ?>"><i class="iconfont">&#xe63f;</i> 开通VIP</a></div>
 					<?php }else{ ?>
 						<div class="wel-item"><a href="<?php echo home_url('/user?action=vip') ?>" style=" color: #fadb30; "><i class="iconfont">&#xe63f;</i> <?php echo vip_type_name() ?></a></div>
-					<?php } ?> 
+					<?php } ?>  -->
 					<div class="wel-item"><a href="javascript:;" id="search"><i class="iconfont">&#xe67a;</i></a></div>
 					<div class="wel-item has-sub-menu">
 						<a href="<?php echo home_url('/user') ?>">
@@ -39,8 +39,8 @@
 								<?php if( $current_user->roles[0] == 'administrator'|| $current_user->roles[0] == 'editor') { ?>
 								<li><a target="_blank" href="<?php echo home_url('/wp-admin/index.php') ?>">后台管理</a></li>
 					          	<?php } ?>
-								<li><a href="<?php echo home_url('/user?action=order') ?>">我的订单</a></li>
-								<li><a href="<?php echo home_url('/user?action=vip') ?>">会员特权</a></li>
+								<!-- <li><a href="<?php echo home_url('/user?action=order') ?>">我的订单</a></li>
+								<li><a href="<?php echo home_url('/user?action=vip') ?>">会员特权</a></li> -->
 								<li><a href="<?php echo home_url('/user?action=info') ?>">修改资料</a></li>
 								<li><a href="<?php echo wp_logout_url(home_url()); ?>">退出</a></li>
 							</ul>
